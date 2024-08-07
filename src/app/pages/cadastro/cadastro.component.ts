@@ -10,9 +10,9 @@ import { FuncionarioService } from 'src/app/services/funcionario.service';
 })
 export class CadastroComponent {
 
-  /**
-   *
-   */
+  btnAcao = "Cadastrar";
+  btnTitulo = "Cadastrar funcionário"
+
   constructor(private funcionarioService : FuncionarioService, private router: Router) {
     
     

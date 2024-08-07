@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { FuncionarioFormComponent } from './componentes/funcionario-form/funcionario-form.component';
+import { EditarComponent } from './pages/editar/editar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CadastroComponent,
-    FuncionarioFormComponent
+    FuncionarioFormComponent,
+    EditarComponent
     
   ],
   imports: [
