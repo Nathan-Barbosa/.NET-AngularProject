@@ -11,6 +11,13 @@ import { HomeComponent } from './pages/home/home.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { FuncionarioFormComponent } from './componentes/funcionario-form/funcionario-form.component';
 import { EditarComponent } from './pages/editar/editar.component';
+import { DetalhesComponent } from './pages/detalhes/detalhes.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
+/*Angular Material*/ 
+import {MatButtonModule, } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -18,7 +25,8 @@ import { EditarComponent } from './pages/editar/editar.component';
     HomeComponent,
     CadastroComponent,
     FuncionarioFormComponent,
-    EditarComponent
+    EditarComponent,
+    DetalhesComponent
     
   ],
   imports: [
@@ -26,7 +34,9 @@ import { EditarComponent } from './pages/editar/editar.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

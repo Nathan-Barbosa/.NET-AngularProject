@@ -30,7 +30,7 @@ export class EditarComponent implements OnInit{
    
   }
 
-  editarFuncionario(funcionario: Funcionario){
+  async editarFuncionario(funcionario: Funcionario){
     this.funcionarioService.EditarFuncionario(funcionario).subscribe((data) =>{
       this.router.navigate(['/']);
     })
