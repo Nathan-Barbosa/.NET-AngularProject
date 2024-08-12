@@ -43,10 +43,13 @@ export class HomeComponent implements OnInit {
     })
   }
 
-  OpenDialog(){
+  OpenDialog(id:number){
     this.dialog.open(ExcluirComponent, {
-      width: '250px',
-      height: '250px'
+      width: '450px',
+      height: '450px',
+      data: {
+        id: id
+      }
     });
 
   }
